@@ -7,7 +7,7 @@
 | Software                          | Intel&reg; oneAPI DPC++ Compiler (beta)  
   
 ## Purpose
-The `vector-add` is a simple program that adds two large vectors of integers and verifies the results. This program is implemented using C++ and Data Parallel C++ (DPC++) languages for Intel(R) CPU and accelerators. 
+The `vector-multiplication` is a simple program that multiplies  Three large vectors of integers and verifies the results. This program is implemented using C++ and Data Parallel C++ (DPC++) languages for Intel(R) CPU and accelerators. 
 
 In this example, you can learn how to use the most basic code in C++ language that offloads computations to a GPU or an FPGA using the DPC++ language.
 
