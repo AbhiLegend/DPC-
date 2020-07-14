@@ -1,0 +1,527 @@
+# callstacks file version: 6
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id
+         1	        -1	      5191	    0	      0	                          mainCRTStartup	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	219240	23	0	144	0	0	0
+         2	        -1	    446032	    0	      1	                      RtlUserThreadStart	C:\WINDOWS\SYSTEM32\ntdll.dll	446000	72	0	21	0	0	0
+         3	         2	     97235	    0	      1	                     BaseThreadInitThunk	C:\WINDOWS\System32\KERNEL32.DLL	97216	55	0	2	0	0	0
+         4	         3	    218851	    0	      0	                   _scrt_common_main_seh	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	218584	380	0	145	0	0	0
+         5	         4	     55279	    0	      0	                                    main	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	55168	549	0	146	0	0	0
+         6	         5	     54082	    0	      0	                        VectorMulInDPCPP	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	54016	969	0	147	0	0	0
+         7	         6	     53630	    0	      0	                     create_device_queue	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	53520	358	0	150	0	0	0
+         8	         7	     65328	    0	      0	                  cl::sycl::queue::queue	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	65248	182	0	151	0	0	0
+         9	         8	   1523674	    0	      0	cl::sycl::device_selector::select_device	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1523616	2784	0	38	0	0	0
+        10	         9	   1483289	    0	      0	           cl::sycl::device::get_devices	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1483152	1712	0	44	0	0	0
+        11	        10	   1558476	    0	      0	       cl::sycl::platform::get_platforms	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1558464	22	0	45	0	0	0
+        12	        11	   1119491	    0	      0	cl::sycl::detail::platform_impl::get_platforms	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1119040	4496	0	46	0	0	0
+        13	        12	      4108	    0	      0	                       OclpiPlatformsGet	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\pi_opencl.dll	4096	48	0	39	0	0	0
+        14	        13	     11835	    0	      1	                        clGetPlatformIDs	C:\WINDOWS\SYSTEM32\OpenCL.dll	11808	216	0	61	0	0	0
+        15	        14	    401594	    0	      1	                     InitOnceExecuteOnce	C:\WINDOWS\System32\KERNELBASE.dll	401584	34	0	28	0	0	0
+        16	        15	     45150	    0	      1	                   RtlRunOnceExecuteOnce	C:\WINDOWS\SYSTEM32\ntdll.dll	45008	252	0	22	0	0	0
+        17	        16	     13739	    0	      1	                        func@0x180003570	C:\WINDOWS\SYSTEM32\OpenCL.dll	13680	1104	0	62	0	0	0
+        18	       367	      4882	    1	      1	  [Loop@0x1800012d0 in func@0x1800012a0]	C:\WINDOWS\SYSTEM32\OpenCL.dll	4816	72	0	63	0	0	0
+        19	        18	      4232	    0	      1	                        func@0x180001060	C:\WINDOWS\SYSTEM32\OpenCL.dll	4192	567	0	65	0	0	0
+        20	        19	    375934	    0	      1	                            LoadLibraryA	C:\WINDOWS\System32\KERNELBASE.dll	375872	79	0	30	0	0	0
+        21	        20	    378544	    0	      1	                          LoadLibraryExA	C:\WINDOWS\System32\KERNELBASE.dll	378496	87	0	31	0	0	0
+        22	        21	    152768	    0	      1	                          LoadLibraryExW	C:\WINDOWS\System32\KERNELBASE.dll	152768	490	0	33	0	0	0
+        23	        18	      4347	    0	      1	                        func@0x180001060	C:\WINDOWS\SYSTEM32\OpenCL.dll	4192	567	0	65	0	0	0
+        24	        23	    308502	    0	      0	                        clGetPlatformIDs	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	307040	2034	0	70	0	0	0
+        25	        24	    397288	    0	      0	                        func@0x180060f50	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	397136	199	0	73	0	0	0
+        26	        25	    396802	    0	      0	                        func@0x18005ff20	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	392992	4132	0	74	0	0	0
+        27	        26	    829989	    0	      0	                        func@0x1800ca90e	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	829710	941	0	85	0	0	0
+        28	       523	    828602	    1	      0	  [Loop@0x1800ca3a0 in func@0x1800ca25d]	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	828320	463	828915,829023,828783	87	0	0	0
+        29	        28	    845957	    0	      0	                        func@0x1800ce820	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	845856	983	0	91	0	0	0
+        30	        29	    935750	    0	      0	                        func@0x1800e4700	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	935680	221	0	93	0	0	0
+        31	        30	    378544	    0	      1	                          LoadLibraryExA	C:\WINDOWS\System32\KERNELBASE.dll	378496	87	0	31	0	0	0
+        32	        31	    152768	    0	      1	                          LoadLibraryExW	C:\WINDOWS\System32\KERNELBASE.dll	152768	490	0	33	0	0	0
+        33	        23	    293938	    0	      1	                        clGetPlatformIDs	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	291952	2688	0	123	0	0	0
+        34	        33	    397921	    0	      1	                        func@0x1800611b0	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	397744	222	0	130	0	0	0
+        35	        34	    397383	    0	      1	                        func@0x180060770	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	395120	2616	0	133	0	0	0
+        36	        35	    860984	    0	      1	                        func@0x1800d22c0	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	860864	810	0	138	0	0	0
+        37	       516	    859531	    1	      1	  [Loop@0x1800d1d50 in func@0x1800d1c05]	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	859472	297	0	140	0	0	0
+        38	        37	    877011	    0	      1	                        func@0x1800d60d0	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	876752	981	0	142	0	0	0
+        39	        38	     74010	    0	      1	             clDevGetAvailableDeviceList	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	73952	159	0	122	0	0	0
+        40	        39	     56481	    0	      1	                        func@0x18000db80	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	56192	424	0	124	0	0	0
+        41	        40	    150126	    0	      1	                        func@0x180024970	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	149872	518	0	127	0	0	0
+        42	       514	    154592	    1	      1	  [Loop@0x180025b10 in func@0x180025870]	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	154384	2992	0	131	0	0	0
+        43	        42	    148650	    0	      1	                        func@0x1800243f0	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	148464	608	0	134	0	0	0
+        44	        43	    170634	    0	      1	                        func@0x1800295d0	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	169424	1253	0	135	0	0	0
+        45	        44	    170027	    0	      1	                        func@0x1800295d0	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	169424	1253	0	135	0	0	0
+        46	        45	    255420	    0	      1	                        func@0x18003e4dc	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	255196	248	0	136	0	0	0
+        47	        46	    292428	    0	      1	                        func@0x1800475c8	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	292296	233	0	139	0	0	0
+        48	        16	     14465	    0	      1	                        func@0x180003570	C:\WINDOWS\SYSTEM32\OpenCL.dll	13680	1104	0	62	0	0	0
+        49	        48	    120284	    0	      1	                       CreateDXGIFactory	C:\WINDOWS\SYSTEM32\dxgi.dll	120192	140	0	117	0	0	0
+        50	        49	    130148	    0	      1	                        func@0x18001fc30	C:\WINDOWS\SYSTEM32\dxgi.dll	130096	140	0	118	0	0	0
+        51	        50	     50332	    0	      1	                        func@0x18000c404	C:\WINDOWS\SYSTEM32\dxgi.dll	50180	243	0	119	0	0	0
+        52	        51	     50924	    0	      1	                        func@0x18000c674	C:\WINDOWS\SYSTEM32\dxgi.dll	50804	153	0	121	0	0	0
+        53	        52	     51322	    0	      1	                        func@0x18000c740	C:\WINDOWS\SYSTEM32\dxgi.dll	51008	524	0	125	0	0	0
+        54	        53	     52732	    0	      1	                        func@0x18000cbc0	C:\WINDOWS\SYSTEM32\dxgi.dll	52160	779	0	126	0	0	0
+        55	        54	    170794	    0	      1	                        func@0x180029af9	C:\WINDOWS\SYSTEM32\dxgi.dll	170745	193	0	128	0	0	0
+        56	        55	     91018	    0	      1	                        func@0x180016314	C:\WINDOWS\SYSTEM32\dxgi.dll	90900	141	0	129	0	0	0
+        57	        56	      8368	    0	      1	             CreateGameConfigStoreClient	C:\WINDOWS\SYSTEM32\resourcepolicyclient.dll	8272	142	0	116	0	0	0
+        58	        57	      8066	    0	      1	                        func@0x180001e30	C:\WINDOWS\SYSTEM32\resourcepolicyclient.dll	7728	442	0	120	0	0	0
+        59	        58	    160932	    0	      1	                          RpcBindingBind	C:\WINDOWS\System32\RPCRT4.dll	160848	108	0	4	0	0	0
+        60	        59	    117861	    0	      1	                        func@0x18001ca7d	C:\WINDOWS\System32\RPCRT4.dll	117373	1397	0	5	0	0	0
+        61	        60	    120124	    0	      1	                        func@0x18001d000	C:\WINDOWS\System32\RPCRT4.dll	118784	1925	0	6	0	0	0
+        62	        61	    210133	    0	      1	                        func@0x1800333c4	C:\WINDOWS\System32\RPCRT4.dll	209860	618	0	7	0	0	0
+        63	        62	    210725	    0	      1	                        func@0x180033634	C:\WINDOWS\System32\RPCRT4.dll	210484	344	0	11	0	0	0
+        64	        63	    136428	    0	      1	                        func@0x180021448	C:\WINDOWS\System32\RPCRT4.dll	136264	183	0	14	0	0	0
+        65	        64	    385540	    0	      1	                        func@0x18005e170	C:\WINDOWS\System32\RPCRT4.dll	385392	291	0	15	0	0	0
+        66	       363	    157334	    1	      1	  [Loop@0x18002660e in func@0x180026478]	C:\WINDOWS\System32\RPCRT4.dll	157198	41	0	16	0	0	0
+        67	        66	    157720	    0	      1	                        func@0x180026704	C:\WINDOWS\System32\RPCRT4.dll	157444	697	0	18	0	0	0
+        68	        67	    885088	    0	      1	                          NdrClientCall3	C:\WINDOWS\System32\RPCRT4.dll	884848	282	0	19	0	0	0
+        69	        68	    888234	    0	      1	                        func@0x1800d8800	C:\WINDOWS\System32\RPCRT4.dll	886784	3276	0	20	0	0	0
+        70	        69	    483925	    0	      1	                          NdrSendReceive	C:\WINDOWS\System32\RPCRT4.dll	483872	109	0	23	0	0	0
+        71	        70	    356590	    0	      1	                        I_RpcSendReceive	C:\WINDOWS\System32\RPCRT4.dll	356480	166	0	26	0	0	0
+        72	        71	     96030	    0	      1	                        func@0x1800175f0	C:\WINDOWS\System32\RPCRT4.dll	95728	831	0	29	0	0	0
+        73	        72	    643492	    0	      1	               NtAlpcSendWaitReceivePort	C:\WINDOWS\SYSTEM32\ntdll.dll	643472	21	0	24	0	0	0
+        74	       369	     14680	    1	      1	  [Loop@0x180003951 in func@0x180003570]	C:\WINDOWS\SYSTEM32\OpenCL.dll	14673	32	0	66	0	0	0
+        75	        74	      4232	    0	      1	                        func@0x180001060	C:\WINDOWS\SYSTEM32\OpenCL.dll	4192	567	0	65	0	0	0
+        76	        75	    375934	    0	      1	                            LoadLibraryA	C:\WINDOWS\System32\KERNELBASE.dll	375872	79	0	30	0	0	0
+        77	        76	    378544	    0	      1	                          LoadLibraryExA	C:\WINDOWS\System32\KERNELBASE.dll	378496	87	0	31	0	0	0
+        78	        77	    152768	    0	      1	                          LoadLibraryExW	C:\WINDOWS\System32\KERNELBASE.dll	152768	490	0	33	0	0	0
+        79	        74	      4347	    0	      1	                        func@0x180001060	C:\WINDOWS\SYSTEM32\OpenCL.dll	4192	567	0	65	0	0	0
+        80	        79	    183738	    0	      1	                        func@0x18002cbbe	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	183230	587	0	8	0	0	0
+        81	       518	    363099	    1	      1	  [Loop@0x180058960 in func@0x180058863]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	362848	1791	0	9	0	0	0
+        82	        81	    419627	    0	      1	                        func@0x180066660	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	419424	302	0	12	0	0	0
+        83	        82	    378544	    0	      1	                          LoadLibraryExA	C:\WINDOWS\System32\KERNELBASE.dll	378496	87	0	31	0	0	0
+        84	        83	    152768	    0	      1	                          LoadLibraryExW	C:\WINDOWS\System32\KERNELBASE.dll	152768	490	0	33	0	0	0
+        85	       518	    363283	    1	      1	  [Loop@0x180058960 in func@0x180058863]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	362848	1791	0	9	0	0	0
+        86	        85	    164616	    0	      1	                        func@0x1800282e0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	164576	60	0	68	0	0	0
+        87	        86	     85072	    0	      1	                        clGetPlatformIDs	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	84704	624	0	69	0	0	0
+        88	       502	    536366	    1	      1	  [Loop@0x180082ef0 in func@0x180082c90]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	536304	351	0	71	0	0	0
+        89	        88	   1740941	    0	      1	                        func@0x1801a9080	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1740928	56	0	75	0	0	0
+        90	        89	    391089	    0	      1	                        func@0x18005f5f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	390640	525	0	76	0	0	0
+        91	        90	    383306	    0	      1	                        func@0x18005d930	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	383280	116	0	77	0	0	0
+        92	        91	    311085	    0	      1	                        func@0x18004bf10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	311056	654	0	78	0	0	0
+        93	        92	     83678	    0	      1	                        func@0x180014690	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	83600	154	0	79	0	0	0
+        94	        93	    309747	    0	      1	                        func@0x18004b900	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	309504	716	0	80	0	0	0
+        95	        94	    375934	    0	      1	                            LoadLibraryA	C:\WINDOWS\System32\KERNELBASE.dll	375872	79	0	30	0	0	0
+        96	        95	    378544	    0	      1	                          LoadLibraryExA	C:\WINDOWS\System32\KERNELBASE.dll	378496	87	0	31	0	0	0
+        97	        96	    152768	    0	      1	                          LoadLibraryExW	C:\WINDOWS\System32\KERNELBASE.dll	152768	490	0	33	0	0	0
+        98	       502	    536390	    1	      1	  [Loop@0x180082ef0 in func@0x180082c90]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	536304	351	0	71	0	0	0
+        99	        98	   1741095	    0	      1	                        func@0x1801a9100	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1741056	433	0	81	0	0	0
+       100	        99	    391236	    0	      1	                        func@0x18005f810	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	391184	619	0	82	0	0	0
+       101	       505	    392104	    1	      1	  [Loop@0x18005fb15 in func@0x18005fa90]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	391957	322	0	83	0	0	0
+       102	       101	   1535883	    0	      1	                        func@0x180176f50	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1535824	137	0	86	0	0	0
+       103	       102	   1929101	    0	      1	                        func@0x1801d6e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1928832	449	0	89	0	0	0
+       104	       103	   1462687	    0	      1	                        func@0x180165060	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1462368	364	0	90	0	0	0
+       105	       104	     18212	    0	      1	          NtGdiDdDDICreateContextVirtual	C:\WINDOWS\System32\win32u.dll	18192	21	0	1	0	0	0
+       106	        99	    391426	    0	      1	                        func@0x18005f810	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	391184	619	0	82	0	0	0
+       107	       106	   1676504	    0	      1	                        func@0x1801988c0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1673408	6023	0	92	0	0	0
+       108	       507	    541785	    1	      1	  [Loop@0x180084440 in func@0x1800843f0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	541760	148	0	94	0	0	0
+       109	       108	    210572	    0	      1	                        func@0x180033640	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	210496	157	0	96	0	0	0
+       110	       509	   1503944	    1	      1	  [Loop@0x18016f290 in func@0x18016f250]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1503888	193	0	97	0	0	0
+       111	       110	    309747	    0	      1	                        func@0x18004b900	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	309504	716	0	80	0	0	0
+       112	       111	    375934	    0	      1	                            LoadLibraryA	C:\WINDOWS\System32\KERNELBASE.dll	375872	79	0	30	0	0	0
+       113	       112	    378544	    0	      1	                          LoadLibraryExA	C:\WINDOWS\System32\KERNELBASE.dll	378496	87	0	31	0	0	0
+       114	       113	    152768	    0	      1	                          LoadLibraryExW	C:\WINDOWS\System32\KERNELBASE.dll	152768	490	0	33	0	0	0
+       115	       509	   1503982	    1	      1	  [Loop@0x18016f290 in func@0x18016f250]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1503888	193	0	97	0	0	0
+       116	       115	    310543	    0	      1	                        func@0x18004bc10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	310288	302	0	99	0	0	0
+       117	       116	    113920	    0	      1	                             FreeLibrary	C:\WINDOWS\System32\KERNEL32.DLL	113920	7	0	3	0	0	0
+       118	        87	    536779	    0	      1	                        func@0x180082c90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	535696	1453	0	72	0	0	0
+       119	       118	    342803	    0	      1	                        func@0x180053924	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	342308	666	0	100	0	0	0
+       120	       119	   2041454	    0	      1	                        func@0x1801f2634	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	2041396	197	0	101	0	0	0
+       121	       120	    401594	    0	      1	                     InitOnceExecuteOnce	C:\WINDOWS\System32\KERNELBASE.dll	401584	34	0	28	0	0	0
+       122	       121	     45150	    0	      1	                   RtlRunOnceExecuteOnce	C:\WINDOWS\SYSTEM32\ntdll.dll	45008	252	0	22	0	0	0
+       123	       122	    347370	    0	      1	                        func@0x180054cd0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	347344	38	0	102	0	0	0
+       124	       123	    361754	    0	      1	                        func@0x1800584b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	361648	443	0	103	0	0	0
+       125	       124	   1626309	    0	      1	                        func@0x18018cf70	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1625968	1033	0	104	0	0	0
+       126	       125	   1654538	    0	      1	                        func@0x180193ea0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1654432	288	0	105	0	0	0
+       127	       126	    429067	    0	      1	                        func@0x180068170	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	426352	2732	0	137	0	0	0
+       128	       127	    428479	    0	      1	                        func@0x180068170	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	426352	2732	0	137	0	0	0
+       129	       128	    365943	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       130	       129	   6460049	    0	      1	                        func@0x180629200	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6459904	207	0	148	0	0	0
+       131	       130	   6461282	    0	      1	                        func@0x1806292d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6460112	1699	0	149	0	0	0
+       132	       131	   6515516	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       133	       132	   6520361	    0	      1	                        func@0x180637c92	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6519954	3774	0	154	0	0	0
+       134	       133	   9033475	    0	      1	                        func@0x18089d610	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9033232	566	0	155	0	0	0
+       135	       371	    713975	    1	      1	  [Loop@0x1800ae4f0 in func@0x1800ae430]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	713968	16	0	156	0	0	0
+       136	       131	   6514863	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       137	       136	   6507440	    0	      1	                        func@0x1806349f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6506992	1648	0	158	0	0	0
+       138	       137	   9096012	    0	      1	                        func@0x1808acb40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9096000	45	0	159	0	0	0
+       139	       373	  10400894	    1	      1	  [Loop@0x1809eb46b in func@0x1809eb460]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10400875	25	0	160	0	0	0
+       140	       375	  10526206	    1	      1	  [Loop@0x180a09ddd in func@0x180a09dc0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526173	44	0	162	0	0	0
+       141	       136	   6508531	    0	      1	                        func@0x1806349f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6506992	1648	0	158	0	0	0
+       142	       141	    781690	    0	      1	                        func@0x1800bed20	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	781600	97	0	164	0	0	0
+       143	       142	    682392	    0	      1	                        func@0x1800a6840	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	682048	841	0	165	0	0	0
+       144	       377	    700268	    1	      1	  [Loop@0x1800aaf50 in func@0x1800aaf10]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	700240	38	0	166	0	0	0
+       145	       144	   8879626	    0	      1	                        func@0x180877dd0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8879568	234	0	168	0	0	0
+       146	       131	   6515745	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       147	       380	   6474168	    1	      1	  [Loop@0x18062c9b0 in func@0x18062c8a0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6474160	297	0	169	0	0	0
+       148	       131	   6516595	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       149	       382	   6462795	    1	      1	  [Loop@0x180629d22 in func@0x180629980]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6462754	153	0	172	0	0	0
+       150	       149	   9433856	    0	      1	                        func@0x1808ff2e0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9433824	107	0	174	0	0	0
+       151	       150	   9427695	    0	      1	                        func@0x1808fdab0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9427632	6192	0	175	0	0	0
+       152	       151	   8882281	    0	      1	                        func@0x180878860	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8882272	15	0	176	0	0	0
+       153	       128	    367057	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       154	       153	    796918	    0	      1	                        func@0x1800c28c0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	796864	124	0	177	0	0	0
+       155	       154	    796438	    0	      1	                        func@0x1800c1940	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	792896	3968	0	178	0	0	0
+       156	       384	   9016095	    1	      1	  [Loop@0x180899300 in func@0x180899220]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9016064	52	0	179	0	0	0
+       157	       386	   9018652	    1	      1	  [Loop@0x180899c50 in func@0x180899b40]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018448	462	0	181	0	0	0
+       158	       388	   1616813	    1	      1	  [Loop@0x18018ab80 in func@0x18018a9cb]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616768	51	0	183	0	0	0
+       159	       158	   9124163	    0	      1	                        func@0x1808b38a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9124000	183	0	185	0	0	0
+       160	       159	   8877923	    0	      1	                        func@0x180877750	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8877904	74	0	186	0	0	0
+       161	       160	   8880107	    0	      1	                        func@0x180877ec0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8879808	583	0	187	0	0	0
+       162	       157	   1616940	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       163	       162	   6552373	    0	      1	                        func@0x18063f9a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6551968	732	0	188	0	0	0
+       164	       163	   6556502	    0	      1	                        func@0x18063fd90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6552976	3777	0	189	0	0	0
+       165	       164	   6584146	    0	      1	                        func@0x180647660	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6583904	358	0	190	0	0	0
+       166	       390	   6592017	    1	      1	  [Loop@0x180649520 in func@0x18064945f]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6591776	276	0	191	0	0	0
+       167	       166	   7346159	    0	      1	                        func@0x1807017d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7346128	46	0	193	0	0	0
+       168	       392	   7342768	    1	      1	  [Loop@0x180700980 in func@0x180700950]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7342464	341	0	194	0	0	0
+       169	       394	   7350377	    1	      1	  [Loop@0x180702852 in func@0x1807024b0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7350354	50	0	196	0	0	0
+       170	       169	   7349967	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       171	       170	   1240527	    0	      1	                        func@0x18012ed90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1240464	390	0	198	0	0	0
+       172	       396	   8878758	    1	      1	  [Loop@0x180877aa6 in func@0x180877840]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8878758	45	0	199	0	0	0
+       173	       128	    368750	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       174	       173	   1311288	    0	      1	                        func@0x180140180	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1311104	434	0	201	0	0	0
+       175	       174	   9025445	    0	      1	                        func@0x18089b790	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9025424	46	0	202	0	0	0
+       176	       398	   9759769	    1	      1	  [Loop@0x18094ec12 in func@0x18094d640]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9759762	36	0	203	0	0	0
+       177	       400	   9767913	    1	      1	  [Loop@0x180950bd5 in func@0x180950b80]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9767893	50	0	205	0	0	0
+       178	         7	     65349	    0	      0	                  cl::sycl::queue::queue	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	65248	182	0	151	0	0	0
+       179	       178	   1574123	    0	      0	                  cl::sycl::queue::queue	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1573744	752	0	47	0	0	0
+       180	       179	   1476675	    0	      0	              cl::sycl::context::context	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1476496	480	0	48	0	0	0
+       181	       180	   1477898	    0	      0	              cl::sycl::context::context	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1477344	3120	0	49	0	0	0
+       182	       181	    974793	    0	      0	cl::sycl::detail::context_impl::context_impl	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	973296	2384	0	50	0	0	0
+       183	       182	      8096	    0	      0	                      OclpiContextCreate	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\pi_opencl.dll	8032	96	0	41	0	0	0
+       184	       183	      5239	    0	      1	                        func@0x18000140e	C:\WINDOWS\SYSTEM32\OpenCL.dll	5134	147	0	67	0	0	0
+       185	       184	    187256	    0	      1	                        func@0x18002d9a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	186784	1038	0	13	0	0	0
+       186	       185	     91572	    0	      1	                         clCreateContext	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	90816	894	0	106	0	0	0
+       187	       186	    496230	    0	      1	                        func@0x180078ea0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	495264	1349	0	107	0	0	0
+       188	       187	    301336	    0	      1	                        func@0x1800498c0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	301248	209	0	108	0	0	0
+       189	       188	   1599827	    0	      1	                        func@0x180186370	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1598320	1630	0	109	0	0	0
+       190	       189	   2239638	    0	      1	                        func@0x180222c2c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	2239532	212	0	110	0	0	0
+       191	         5	     54559	    0	      0	                        VectorMulInDPCPP	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	54016	969	0	147	0	0	0
+       192	       191	     55128	    0	      0	cl::sycl::queue::submit<`lambda at src\\vector-add.cpp:114:12'>	C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe	54992	169	0	152	0	0	0
+       193	       192	   1579648	    0	      0	            cl::sycl::queue::submit_impl	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1579568	128	0	51	0	0	0
+       194	       193	   1582783	    0	      0	cl::sycl::detail::queue_impl::submit_impl	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1582544	1648	0	52	0	0	0
+       195	       194	   1538495	    0	      0	             cl::sycl::handler::finalize	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1535376	3936	0	53	0	0	0
+       196	       195	   1380171	    0	      0	      cl::sycl::detail::Scheduler::addCG	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1379920	528	0	54	0	0	0
+       197	       196	   1329844	    0	      0	      cl::sycl::detail::Command::enqueue	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1329664	1040	0	55	0	0	0
+       198	       197	   1362386	    0	      0	cl::sycl::detail::ExecCGCommand::enqueueImp	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1355856	15920	0	56	0	0	0
+       199	       198	   1243053	    0	      0	cl::sycl::detail::ProgramManager::getOrCreateKernel	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1243008	4672	0	57	0	0	0
+       200	       199	   1241166	    0	      0	cl::sycl::detail::ProgramManager::getBuiltPIProgram	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1239440	2352	0	58	0	0	0
+       201	       365	   1264887	    1	      0	             [Loop@0x180133ef1 in throw]	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1261297	5233	1266967,1266636,1266695,1267082,1266754,1267091,1267192,1266591,1266563,1266556	59	0	0	0
+       202	       201	      8649	    0	      0	                        OclpiProgramLink	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\pi_opencl.dll	8560	128	0	42	0	0	0
+       203	       202	    118272	    0	      1	                        func@0x18001cba0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	117664	832	0	111	0	0	0
+       204	       203	    440647	    0	      1	                        func@0x18006b180	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	438656	3402	0	112	0	0	0
+       205	       512	   1623442	    1	      1	  [Loop@0x18018c550 in func@0x18018c430]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1623376	318	0	113	0	0	0
+       206	       205	   1654538	    0	      1	                        func@0x180193ea0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1654432	288	0	105	0	0	0
+       207	       206	    429067	    0	      1	                        func@0x180068170	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	426352	2732	0	137	0	0	0
+       208	       207	    428154	    0	      1	                        func@0x180068170	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	426352	2732	0	137	0	0	0
+       209	       402	    358988	    1	      1	  [Loop@0x1800577c5 in func@0x180057720]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	358341	1447	0	207	0	0	0
+       210	       209	   1126030	    0	      1	                        func@0x180112cb0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1125552	1174	0	209	0	0	0
+       211	       404	   1238768	    1	      1	  [Loop@0x18012e6d0 in func@0x18012e3b0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1238736	39	0	210	0	0	0
+       212	       407	   1199254	    1	      1	  [Loop@0x180124c70 in func@0x180124810]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1199216	47	0	212	0	0	0
+       213	       212	   1223398	    0	      1	                        func@0x18012a9f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1223152	353	0	215	0	0	0
+       214	       213	   1231790	    0	      1	                        func@0x18012c9c4	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1231300	6268	0	216	0	0	0
+       215	       214	    577791	    0	      1	                        func@0x18008d0f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	577776	91	0	217	0	0	0
+       216	       209	   1126652	    0	      1	                        func@0x180112cb0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1125552	1174	0	209	0	0	0
+       217	       216	   1088755	    0	      1	                        func@0x180109ce0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1088736	52	0	218	0	0	0
+       218	       409	   1086496	    1	      1	  [Loop@0x180109407 in func@0x1801093d0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1086471	110	0	219	0	0	0
+       219	       218	    953155	    0	      1	                        func@0x1800e8b2e	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	953134	54	0	221	0	0	0
+       220	       219	    950759	    0	      1	                        func@0x1800e8140	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	950592	484	0	222	0	0	0
+       221	       220	  10526107	    0	      1	                        func@0x180a09d80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526080	61	0	223	0	0	0
+       222	       221	    260972	    0	      1	                             RtlFreeHeap	C:\WINDOWS\SYSTEM32\ntdll.dll	260928	173	0	25	0	0	0
+       223	       218	   1014269	    0	      1	                        func@0x1800f79df	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1014239	63	0	224	0	0	0
+       224	       223	    995646	    0	      1	                        func@0x1800f3120	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	995616	184	0	225	0	0	0
+       225	       224	    995400	    0	      1	                        func@0x1800f3000	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	995328	288	0	226	0	0	0
+       226	       225	  10526107	    0	      1	                        func@0x180a09d80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526080	61	0	223	0	0	0
+       227	       226	    261008	    0	      1	                             RtlFreeHeap	C:\WINDOWS\SYSTEM32\ntdll.dll	260928	173	0	25	0	0	0
+       228	       227	    264147	    0	      1	                        func@0x180040000	C:\WINDOWS\SYSTEM32\ntdll.dll	262144	2127	0	27	0	0	0
+       229	       208	    359889	    0	      1	                        func@0x180057720	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	358176	3449	0	208	0	0	0
+       230	       229	   6065219	    0	      1	                        func@0x1805c8ae0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6064864	1046	0	227	0	0	0
+       231	       411	   6073014	    1	      1	  [Loop@0x1805caa90 in func@0x1805ca940]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6072976	48	0	228	0	0	0
+       232	       414	   6104252	    1	      1	  [Loop@0x1805d24a0 in func@0x1805d2230]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6104224	913	0	230	0	0	0
+       233	       232	   6111093	    0	      1	                        func@0x1805d3f20	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6111008	131	0	233	0	0	0
+       234	       233	   6191887	    0	      1	                        func@0x1805e7a40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6191680	284	0	234	0	0	0
+       235	       416	    569664	    1	      1	  [Loop@0x18008b100 in func@0x18008b010]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	569600	148	0	235	0	0	0
+       236	       207	    428479	    0	      1	                        func@0x180068170	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	426352	2732	0	137	0	0	0
+       237	       236	    364447	    0	      1	                        func@0x180058be0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	363488	2364	0	237	0	0	0
+       238	       237	    356564	    0	      1	                        func@0x180056e70	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	355952	2224	0	238	0	0	0
+       239	       238	    679779	    0	      1	                        func@0x1800a5f40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	679744	45	0	239	0	0	0
+       240	       239	    726305	    0	      1	                        func@0x1800b14a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	726176	187	0	240	0	0	0
+       241	       240	    711063	    0	      1	                        func@0x1800ad420	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	709664	2021	0	241	0	0	0
+       242	       241	   8874120	    0	      1	                        func@0x180876840	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8874048	107	0	242	0	0	0
+       243	       418	    719391	    1	      1	  [Loop@0x1800afa00 in func@0x1800af960]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	719360	102	0	243	0	0	0
+       244	       243	    716953	    0	      1	                        func@0x1800aeebf	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	716479	1797	0	245	0	0	0
+       245	       244	    752205	    0	      1	                        func@0x1800b4110	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	737552	22736	0	246	0	0	0
+       246	       245	   6537838	    0	      1	                        func@0x18063c200	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6537728	328	0	247	0	0	0
+       247	       246	   8878749	    0	      1	                        func@0x180877840	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8878144	1223	0	200	0	0	0
+       248	       236	    365943	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       249	       248	   6460049	    0	      1	                        func@0x180629200	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6459904	207	0	148	0	0	0
+       250	       249	   6461282	    0	      1	                        func@0x1806292d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6460112	1699	0	149	0	0	0
+       251	       420	   6512557	    1	      1	  [Loop@0x180635f1c in func@0x180635e80]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512412	431	0	248	0	0	0
+       252	       422	   6545276	    1	      1	  [Loop@0x18063df70 in func@0x18063df30]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545264	64	0	249	0	0	0
+       253	       252	   6544608	    0	      1	                        func@0x18063dcd0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6544592	600	0	251	0	0	0
+       254	       253	    699218	    0	      1	                        func@0x1800aaa60	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	698976	325	0	252	0	0	0
+       255	       424	   6544769	    1	      1	  [Loop@0x18063dd50 in func@0x18063dcd0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6544720	306	0	253	0	0	0
+       256	       422	   6545319	    1	      1	  [Loop@0x18063df70 in func@0x18063df30]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545264	64	0	249	0	0	0
+       257	       250	   6515745	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       258	       257	   6477909	    0	      1	                        func@0x18062c8a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6473888	5791	0	170	0	0	0
+       259	       258	   9069331	    0	      1	                        func@0x1808a6190	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9068944	496	0	254	0	0	0
+       260	       259	   9096079	    0	      1	                        func@0x1808acb70	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9096048	80	0	255	0	0	0
+       261	       427	  10400894	    1	      1	  [Loop@0x1809eb46b in func@0x1809eb460]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10400875	25	0	160	0	0	0
+       262	       429	  10526206	    1	      1	  [Loop@0x180a09ddd in func@0x180a09dc0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526173	44	0	162	0	0	0
+       263	       236	    366320	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       264	       263	   6460049	    0	      1	                        func@0x180629200	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6459904	207	0	148	0	0	0
+       265	       264	   6461282	    0	      1	                        func@0x1806292d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6460112	1699	0	149	0	0	0
+       266	       265	   6515516	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       267	       266	   6519920	    0	      1	                        func@0x180637a10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6519312	623	0	256	0	0	0
+       268	       432	   6546010	    1	      1	  [Loop@0x18063e250 in func@0x18063df30]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6546000	61	0	257	0	0	0
+       269	       268	    699055	    0	      1	                        func@0x1800aaa60	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	698976	325	0	252	0	0	0
+       270	       236	    367057	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       271	       270	    796918	    0	      1	                        func@0x1800c28c0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	796864	124	0	177	0	0	0
+       272	       271	    796438	    0	      1	                        func@0x1800c1940	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	792896	3968	0	178	0	0	0
+       273	       434	   9016095	    1	      1	  [Loop@0x180899300 in func@0x180899220]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9016064	52	0	179	0	0	0
+       274	       436	   9018652	    1	      1	  [Loop@0x180899c50 in func@0x180899b40]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018448	462	0	181	0	0	0
+       275	       438	   1616730	    1	      1	  [Loop@0x18018ab30 in func@0x18018a9cb]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616688	61	0	259	0	0	0
+       276	       440	   1607200	    1	      1	  [Loop@0x180188573 in func@0x180188520]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1607027	521	0	260	0	0	0
+       277	       276	   9334916	    0	      1	                        func@0x1808e7070	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9334896	30	0	262	0	0	0
+       278	       277	   8874033	    0	      1	                        func@0x180876800	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8873984	59	0	263	0	0	0
+       279	       278	   6464633	    0	      1	                        func@0x18062a29f	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6464159	1797	0	264	0	0	0
+       280	       279	   6499630	    0	      1	                        func@0x180632b59	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6499161	7780	0	265	0	0	0
+       281	       280	   1278896	    0	      1	                        func@0x1801383a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1278880	26	0	266	0	0	0
+       282	       444	   1280124	    1	      1	  [Loop@0x180138720 in func@0x1801383c0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1279776	365	0	267	0	0	0
+       283	       282	   8977536	    0	      1	                        func@0x18088fbd0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8977360	729	0	271	0	0	0
+       284	       283	   8927213	    0	      1	                        func@0x180883770	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8927088	217	0	272	0	0	0
+       285	       446	   8967203	    1	      1	  [Loop@0x18088d373 in func@0x18088d290]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8967027	202	0	273	0	0	0
+       286	       285	   8926433	    0	      1	                        func@0x18088343e	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8926270	398	0	275	0	0	0
+       287	       448	   1616813	    1	      1	  [Loop@0x18018ab80 in func@0x18018a9cb]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616768	51	0	183	0	0	0
+       288	       287	   9124171	    0	      1	                        func@0x1808b38a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9124000	183	0	185	0	0	0
+       289	       288	  10526107	    0	      1	                        func@0x180a09d80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526080	61	0	223	0	0	0
+       290	       289	    261008	    0	      1	                             RtlFreeHeap	C:\WINDOWS\SYSTEM32\ntdll.dll	260928	173	0	25	0	0	0
+       291	       290	    679743	    0	      1	                        func@0x1800a5cea	C:\WINDOWS\SYSTEM32\ntdll.dll	679146	1898	0	32	0	0	0
+       292	       274	   1616940	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       293	       292	   6552373	    0	      1	                        func@0x18063f9a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6551968	732	0	188	0	0	0
+       294	       293	   6556502	    0	      1	                        func@0x18063fd90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6552976	3777	0	189	0	0	0
+       295	       294	   6584146	    0	      1	                        func@0x180647660	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6583904	358	0	190	0	0	0
+       296	       450	   6592017	    1	      1	  [Loop@0x180649520 in func@0x18064945f]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6591776	276	0	191	0	0	0
+       297	       296	   7346159	    0	      1	                        func@0x1807017d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7346128	46	0	193	0	0	0
+       298	       452	   7342768	    1	      1	  [Loop@0x180700980 in func@0x180700950]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7342464	341	0	194	0	0	0
+       299	       454	   7350377	    1	      1	  [Loop@0x180702852 in func@0x1807024b0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7350354	50	0	196	0	0	0
+       300	       456	   7350377	    1	      1	  [Loop@0x180702852 in func@0x1807024b0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7350354	50	0	196	0	0	0
+       301	       300	   7349967	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       302	       301	   1240631	    0	      1	                        func@0x18012ed90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1240464	390	0	198	0	0	0
+       303	       302	    885500	    0	      1	                        func@0x1800d8260	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	885344	427	0	276	0	0	0
+       304	       458	    901298	    1	      1	  [Loop@0x1800dbfa2 in func@0x1800dbf20]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	901026	352	0	277	0	0	0
+       305	       304	   8878099	    0	      1	                        func@0x180877810	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8878096	36	0	279	0	0	0
+       306	       296	   7346148	    0	      1	                        func@0x1807017d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7346128	46	0	193	0	0	0
+       307	       306	   7349603	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       308	       307	   6583302	    0	      1	                        func@0x1806470ae	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6582446	989	0	280	0	0	0
+       309	       308	   6577281	    0	      1	                        func@0x180645b50	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6576976	397	0	281	0	0	0
+       310	       460	   9116492	    1	      1	  [Loop@0x1808b1b10 in func@0x1808b1ab0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9116432	91	0	282	0	0	0
+       311	       462	   9114653	    1	      1	  [Loop@0x1808b1410 in func@0x1808b1340]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9114640	48	0	284	0	0	0
+       312	       465	   7886759	    1	      1	  [Loop@0x180785790 in func@0x1807855b4]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7886736	49	0	286	0	0	0
+       313	       467	   7884329	    1	      1	  [Loop@0x180784d60 in func@0x180784d10]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7884128	377	0	289	0	0	0
+       314	       313	   7884829	    0	      1	                        func@0x180784f20	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7884576	529	0	291	0	0	0
+       315	       314	   6038521	    0	      1	                        func@0x1805c21fd	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6038013	648	0	292	0	0	0
+       316	       470	   6043029	    1	      1	  [Loop@0x1805c2f50 in func@0x1805c2490]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6041424	1856	0	293	0	0	0
+       317	       316	   9117777	    0	      1	                        func@0x1808b2040	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9117760	133	0	296	0	0	0
+       318	       472	   9123784	    1	      1	  [Loop@0x1808b37b0 in func@0x1808b3760]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9123760	30	0	297	0	0	0
+       319	       318	   9110503	    0	      1	                        func@0x1808b03b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9110448	91	0	299	0	0	0
+       320	       319	   9109656	    0	      1	                        func@0x1808aff60	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9109344	345	0	300	0	0	0
+       321	       474	   9110196	    1	      1	  [Loop@0x1808b0243 in func@0x1808b0210]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9110083	122	0	301	0	0	0
+       322	       321	   8881752	    0	      1	                        func@0x180878380	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8881024	954	0	303	0	0	0
+       323	       322	   8877941	    0	      1	                        func@0x180877750	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8877904	74	0	186	0	0	0
+       324	       323	   8969818	    0	      1	                        func@0x18088de00	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8969728	135	0	304	0	0	0
+       325	       324	   8974575	    0	      1	                        func@0x18088f000	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8974336	1184	0	305	0	0	0
+       326	       476	   8904200	    1	      1	  [Loop@0x18087dde0 in func@0x18087dda0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8904160	45	0	306	0	0	0
+       327	       478	   9018130	    1	      1	  [Loop@0x180899b00 in func@0x180899ad0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018112	31	0	308	0	0	0
+       328	       480	   9017736	    1	      1	  [Loop@0x1808998b0 in func@0x1808997a0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9017520	467	0	310	0	0	0
+       329	       483	   1732192	    1	      1	  [Loop@0x1801a6e51 in func@0x1801a69b0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1732177	41	0	312	0	0	0
+       330	       236	    367138	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       331	       330	   1378261	    0	      1	                        func@0x18014f590	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1373584	4816	0	315	0	0	0
+       332	       485	   9016095	    1	      1	  [Loop@0x180899300 in func@0x180899220]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9016064	52	0	179	0	0	0
+       333	       487	   9018652	    1	      1	  [Loop@0x180899c50 in func@0x180899b40]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018448	462	0	181	0	0	0
+       334	       489	   9018130	    1	      1	  [Loop@0x180899b00 in func@0x180899ad0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018112	31	0	308	0	0	0
+       335	       491	   9017736	    1	      1	  [Loop@0x1808998b0 in func@0x1808997a0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9017520	467	0	310	0	0	0
+       336	       494	   8124537	    1	      1	  [Loop@0x1807bf7a0 in func@0x1807bf69f]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8124320	722	0	316	0	0	0
+       337	       336	   6908761	    0	      1	                        func@0x1806968f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6908144	732	0	319	0	0	0
+       338	       337	   6909546	    0	      1	                        func@0x180696d60	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6909280	1347	0	320	0	0	0
+       339	       338	   6905365	    0	      1	                        func@0x180695da0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6905248	508	0	321	0	0	0
+       340	       339	   7634166	    0	      1	                        func@0x180747ce0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7634144	28	0	322	0	0	0
+       341	       340	   3186577	    0	      1	                        func@0x180309db0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	3186096	2291	0	323	0	0	0
+       342	       341	   8049780	    0	      1	                        func@0x1807ad460	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8049760	60	0	324	0	0	0
+       343	       342	   8017039	    0	      1	                        func@0x1807a5380	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8016768	1173	0	325	0	0	0
+       344	       343	   7969430	    0	      1	                        func@0x180799a10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7969296	965	0	326	0	0	0
+       345	       496	   7576306	    1	      1	  [Loop@0x180739aa3 in func@0x180739a40]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7576227	203	0	327	0	0	0
+       346	       498	    628240	    1	      1	  [Loop@0x180099610 in func@0x1800995e0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	628240	14	0	329	0	0	0
+       347	       236	    368750	    0	      1	                        func@0x18005951c	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	365852	3044	0	143	0	0	0
+       348	       347	   1311288	    0	      1	                        func@0x180140180	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1311104	434	0	201	0	0	0
+       349	       348	   9025445	    0	      1	                        func@0x18089b790	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9025424	46	0	202	0	0	0
+       350	       349	   9760213	    0	      1	                        func@0x18094d640	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9754176	7374	0	204	0	0	0
+       351	       500	   9766781	    1	      1	  [Loop@0x180950760 in func@0x180950730]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9766752	39	0	331	0	0	0
+       352	       351	  10526107	    0	      1	                        func@0x180a09d80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526080	61	0	223	0	0	0
+       353	       352	    261008	    0	      1	                             RtlFreeHeap	C:\WINDOWS\SYSTEM32\ntdll.dll	260928	173	0	25	0	0	0
+       354	       353	    680616	    0	      1	                        func@0x1800a5cea	C:\WINDOWS\SYSTEM32\ntdll.dll	679146	1898	0	32	0	0	0
+       355	       354	    305005	    0	      1	                        func@0x18004a5e4	C:\WINDOWS\SYSTEM32\ntdll.dll	304612	464	0	34	0	0	0
+       356	       355	    305126	    0	      1	                        func@0x18004a7bc	C:\WINDOWS\SYSTEM32\ntdll.dll	305084	146	0	35	0	0	0
+       357	       356	    261008	    0	      1	                             RtlFreeHeap	C:\WINDOWS\SYSTEM32\ntdll.dll	260928	173	0	25	0	0	0
+       358	       357	    264079	    0	      1	                        func@0x180040000	C:\WINDOWS\SYSTEM32\ntdll.dll	262144	2127	0	27	0	0	0
+       359	       521	    270671	    1	      1	  [Loop@0x180041b01 in func@0x1800418e0]	C:\WINDOWS\SYSTEM32\ntdll.dll	269057	735	0	36	0	0	0
+       360	       359	    289873	    0	      1	                        func@0x180046bd4	C:\WINDOWS\SYSTEM32\ntdll.dll	289748	289	0	40	0	0	0
+       361	       360	    639860	    0	      1	                 NtAllocateVirtualMemory	C:\WINDOWS\SYSTEM32\ntdll.dll	639840	21	0	43	0	0	0
+       362	        -1	   2239232	    0	      1	                        func@0x180222b00	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	2239232	102	0	115	0	0	0
+       363	        65	    157198	    0	      1	                        func@0x180026478	C:\WINDOWS\System32\RPCRT4.dll	156792	644	0	17	0	0	0
+       364	        65	    157334	    0	      1	                        func@0x180026478	C:\WINDOWS\System32\RPCRT4.dll	156792	644	0	17	0	0	0
+       365	       200	   1261297	    0	      0	                                   throw	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1260640	7232	0	60	0	0	0
+       366	       200	   1264887	    0	      0	                                   throw	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin\sycl.dll	1260640	7232	0	60	0	0	0
+       367	        17	      4816	    0	      1	                        func@0x1800012a0	C:\WINDOWS\SYSTEM32\OpenCL.dll	4768	149	0	64	0	0	0
+       368	        17	      4882	    0	      1	                        func@0x1800012a0	C:\WINDOWS\SYSTEM32\OpenCL.dll	4768	149	0	64	0	0	0
+       369	        16	     14673	    0	      1	                        func@0x180003570	C:\WINDOWS\SYSTEM32\OpenCL.dll	13680	1104	0	62	0	0	0
+       370	        16	     14680	    0	      1	                        func@0x180003570	C:\WINDOWS\SYSTEM32\OpenCL.dll	13680	1104	0	62	0	0	0
+       371	       134	    713968	    0	      1	                        func@0x1800ae430	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	713776	424	0	157	0	0	0
+       372	       134	    713975	    0	      1	                        func@0x1800ae430	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	713776	424	0	157	0	0	0
+       373	       138	  10400875	    0	      1	                        func@0x1809eb460	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10400864	60	0	161	0	0	0
+       374	       138	  10400894	    0	      1	                        func@0x1809eb460	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10400864	60	0	161	0	0	0
+       375	       139	  10526173	    0	      1	                        func@0x180a09dc0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526144	94	0	163	0	0	0
+       376	       139	  10526206	    0	      1	                        func@0x180a09dc0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526144	94	0	163	0	0	0
+       377	       143	    700240	    0	      1	                        func@0x1800aaf10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	700176	278	0	167	0	0	0
+       378	       143	    700268	    0	      1	                        func@0x1800aaf10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	700176	278	0	167	0	0	0
+       379	       146	   6474147	    0	      1	                        func@0x18062c8a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6473888	5791	0	170	0	0	0
+       380	       379	   6474160	    1	      1	  [Loop@0x18062c9a3 in func@0x18062c8a0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6474147	450	0	171	0	0	0
+       381	       146	   6474168	    0	      1	                        func@0x18062c8a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6473888	5791	0	170	0	0	0
+       382	       148	   6462754	    0	      1	                        func@0x180629980	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6461824	2334	0	173	0	0	0
+       383	       148	   6462795	    0	      1	                        func@0x180629980	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6461824	2334	0	173	0	0	0
+       384	       155	   9016064	    0	      1	                        func@0x180899220	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9015840	362	0	180	0	0	0
+       385	       155	   9016095	    0	      1	                        func@0x180899220	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9015840	362	0	180	0	0	0
+       386	       156	   9018448	    0	      1	                        func@0x180899b40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018176	885	0	182	0	0	0
+       387	       156	   9018652	    0	      1	                        func@0x180899b40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018176	885	0	182	0	0	0
+       388	       157	   1616768	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       389	       157	   1616813	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       390	       165	   6591776	    0	      1	                        func@0x18064945f	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6591583	835	0	192	0	0	0
+       391	       165	   6592017	    0	      1	                        func@0x18064945f	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6591583	835	0	192	0	0	0
+       392	       167	   7342464	    0	      1	                        func@0x180700950	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7342416	596	0	195	0	0	0
+       393	       167	   7342768	    0	      1	                        func@0x180700950	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7342416	596	0	195	0	0	0
+       394	       168	   7350354	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       395	       168	   7350377	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       396	       171	   8878758	    0	      1	                        func@0x180877840	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8878144	1223	0	200	0	0	0
+       397	       171	   8878758	    0	      1	                        func@0x180877840	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8878144	1223	0	200	0	0	0
+       398	       175	   9759762	    0	      1	                        func@0x18094d640	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9754176	7374	0	204	0	0	0
+       399	       175	   9759769	    0	      1	                        func@0x18094d640	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9754176	7374	0	204	0	0	0
+       400	       176	   9767893	    0	      1	                        func@0x180950b80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9767808	136	0	206	0	0	0
+       401	       176	   9767913	    0	      1	                        func@0x180950b80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9767808	136	0	206	0	0	0
+       402	       208	    358341	    0	      1	                        func@0x180057720	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	358176	3449	0	208	0	0	0
+       403	       208	    358988	    0	      1	                        func@0x180057720	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	358176	3449	0	208	0	0	0
+       404	       210	   1238736	    0	      1	                        func@0x18012e3b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1237936	2372	0	211	0	0	0
+       405	       210	   1238768	    0	      1	                        func@0x18012e3b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1237936	2372	0	211	0	0	0
+       406	       211	   1199136	    0	      1	                        func@0x180124810	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1198096	1229	0	213	0	0	0
+       407	       406	   1199216	    1	      1	  [Loop@0x180124c20 in func@0x180124810]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1199136	140	0	214	0	0	0
+       408	       211	   1199254	    0	      1	                        func@0x180124810	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1198096	1229	0	213	0	0	0
+       409	       217	   1086471	    0	      1	                        func@0x1801093d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1086416	1779	0	220	0	0	0
+       410	       217	   1086496	    0	      1	                        func@0x1801093d0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1086416	1779	0	220	0	0	0
+       411	       230	   6072976	    0	      1	                        func@0x1805ca940	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6072640	716	0	229	0	0	0
+       412	       230	   6073014	    0	      1	                        func@0x1805ca940	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6072640	716	0	229	0	0	0
+       413	       231	   6104177	    0	      1	                        func@0x1805d2230	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6103600	1720	0	231	0	0	0
+       414	       413	   6104224	    1	      1	  [Loop@0x1805d2471 in func@0x1805d2230]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6104177	1000	0	232	0	0	0
+       415	       231	   6104252	    0	      1	                        func@0x1805d2230	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6103600	1720	0	231	0	0	0
+       416	       234	    569600	    0	      1	                        func@0x18008b010	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	569360	423	0	236	0	0	0
+       417	       234	    569664	    0	      1	                        func@0x18008b010	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	569360	423	0	236	0	0	0
+       418	       242	    719360	    0	      1	                        func@0x1800af960	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	719200	881	0	244	0	0	0
+       419	       242	    719391	    0	      1	                        func@0x1800af960	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	719200	881	0	244	0	0	0
+       420	       250	   6512412	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       421	       250	   6512557	    0	      1	                        func@0x180635e80	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6512256	5232	0	153	0	0	0
+       422	       251	   6545264	    0	      1	                        func@0x18063df30	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545200	1308	0	250	0	0	0
+       423	       251	   6545276	    0	      1	                        func@0x18063df30	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545200	1308	0	250	0	0	0
+       424	       252	   6544720	    0	      1	                        func@0x18063dcd0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6544592	600	0	251	0	0	0
+       425	       252	   6544769	    0	      1	                        func@0x18063dcd0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6544592	600	0	251	0	0	0
+       426	       251	   6545319	    0	      1	                        func@0x18063df30	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545200	1308	0	250	0	0	0
+       427	       260	  10400875	    0	      1	                        func@0x1809eb460	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10400864	60	0	161	0	0	0
+       428	       260	  10400894	    0	      1	                        func@0x1809eb460	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10400864	60	0	161	0	0	0
+       429	       261	  10526173	    0	      1	                        func@0x180a09dc0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526144	94	0	163	0	0	0
+       430	       261	  10526206	    0	      1	                        func@0x180a09dc0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	10526144	94	0	163	0	0	0
+       431	       267	   6545536	    0	      1	                        func@0x18063df30	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545200	1308	0	250	0	0	0
+       432	       431	   6546000	    1	      1	  [Loop@0x18063e080 in func@0x18063df30]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545536	783	0	258	0	0	0
+       433	       267	   6546010	    0	      1	                        func@0x18063df30	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6545200	1308	0	250	0	0	0
+       434	       272	   9016064	    0	      1	                        func@0x180899220	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9015840	362	0	180	0	0	0
+       435	       272	   9016095	    0	      1	                        func@0x180899220	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9015840	362	0	180	0	0	0
+       436	       273	   9018448	    0	      1	                        func@0x180899b40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018176	885	0	182	0	0	0
+       437	       273	   9018652	    0	      1	                        func@0x180899b40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018176	885	0	182	0	0	0
+       438	       274	   1616688	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       439	       274	   1616730	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       440	       275	   1607027	    0	      1	                        func@0x180188520	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1606944	789	0	261	0	0	0
+       441	       275	   1607200	    0	      1	                        func@0x180188520	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1606944	789	0	261	0	0	0
+       442	       281	   1279200	    0	      1	                        func@0x1801383c0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1278912	1481	0	268	0	0	0
+       443	       442	   1279200	    1	      1	  [Loop@0x1801384e0 in func@0x1801383c0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1279200	950	0	270	0	0	0
+       444	       443	   1279776	    1	      1	  [Loop@0x1801384e0 in func@0x1801383c0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1279200	920	0	269	0	0	0
+       445	       281	   1280124	    0	      1	                        func@0x1801383c0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1278912	1481	0	268	0	0	0
+       446	       284	   8967027	    0	      1	                        func@0x18088d290	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8966800	462	0	274	0	0	0
+       447	       284	   8967203	    0	      1	                        func@0x18088d290	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8966800	462	0	274	0	0	0
+       448	       274	   1616768	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       449	       274	   1616813	    0	      1	                        func@0x18018a9cb	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1616331	8159	0	184	0	0	0
+       450	       295	   6591776	    0	      1	                        func@0x18064945f	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6591583	835	0	192	0	0	0
+       451	       295	   6592017	    0	      1	                        func@0x18064945f	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6591583	835	0	192	0	0	0
+       452	       297	   7342464	    0	      1	                        func@0x180700950	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7342416	596	0	195	0	0	0
+       453	       297	   7342768	    0	      1	                        func@0x180700950	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7342416	596	0	195	0	0	0
+       454	       298	   7350354	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       455	       298	   7350377	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       456	       299	   7350354	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       457	       299	   7350377	    0	      1	                        func@0x1807024b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7349424	1809	0	197	0	0	0
+       458	       303	    901026	    0	      1	                        func@0x1800dbf20	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	900896	599	0	278	0	0	0
+       459	       303	    901298	    0	      1	                        func@0x1800dbf20	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	900896	599	0	278	0	0	0
+       460	       309	   9116432	    0	      1	                        func@0x1808b1ab0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9116336	270	0	283	0	0	0
+       461	       309	   9116492	    0	      1	                        func@0x1808b1ab0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9116336	270	0	283	0	0	0
+       462	       310	   9114640	    0	      1	                        func@0x1808b1340	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9114432	286	0	285	0	0	0
+       463	       310	   9114653	    0	      1	                        func@0x1808b1340	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9114432	286	0	285	0	0	0
+       464	       274	   7886423	    0	      1	                        func@0x1807855b4	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7886260	1221	0	287	0	0	0
+       465	       464	   7886736	    1	      1	  [Loop@0x180785657 in func@0x1807855b4]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7886423	367	0	288	0	0	0
+       466	       274	   7886759	    0	      1	                        func@0x1807855b4	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7886260	1221	0	287	0	0	0
+       467	       312	   7884128	    0	      1	                        func@0x180784d10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7884048	528	0	290	0	0	0
+       468	       312	   7884329	    0	      1	                        func@0x180784d10	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7884048	528	0	290	0	0	0
+       469	       315	   6041392	    0	      1	                        func@0x1805c2490	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6038672	4881	0	294	0	0	0
+       470	       469	   6041424	    1	      1	  [Loop@0x1805c2f30 in func@0x1805c2490]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6041392	1897	0	295	0	0	0
+       471	       315	   6043029	    0	      1	                        func@0x1805c2490	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	6038672	4881	0	294	0	0	0
+       472	       317	   9123760	    0	      1	                        func@0x1808b3760	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9123680	308	0	298	0	0	0
+       473	       317	   9123784	    0	      1	                        func@0x1808b3760	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9123680	308	0	298	0	0	0
+       474	       320	   9110083	    0	      1	                        func@0x1808b0210	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9110032	201	0	302	0	0	0
+       475	       320	   9110196	    0	      1	                        func@0x1808b0210	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9110032	201	0	302	0	0	0
+       476	       325	   8904160	    0	      1	                        func@0x18087dda0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8904096	564	0	307	0	0	0
+       477	       325	   8904200	    0	      1	                        func@0x18087dda0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8904096	564	0	307	0	0	0
+       478	       274	   9018112	    0	      1	                        func@0x180899ad0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018064	109	0	309	0	0	0
+       479	       274	   9018130	    0	      1	                        func@0x180899ad0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018064	109	0	309	0	0	0
+       480	       327	   9017520	    0	      1	                        func@0x1808997a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9017248	803	0	311	0	0	0
+       481	       327	   9017736	    0	      1	                        func@0x1808997a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9017248	803	0	311	0	0	0
+       482	       328	   1732096	    0	      1	                        func@0x1801a69b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1730992	2592	0	313	0	0	0
+       483	       482	   1732177	    1	      1	  [Loop@0x1801a6e00 in func@0x1801a69b0]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1732096	1012	0	314	0	0	0
+       484	       328	   1732192	    0	      1	                        func@0x1801a69b0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	1730992	2592	0	313	0	0	0
+       485	       331	   9016064	    0	      1	                        func@0x180899220	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9015840	362	0	180	0	0	0
+       486	       331	   9016095	    0	      1	                        func@0x180899220	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9015840	362	0	180	0	0	0
+       487	       332	   9018448	    0	      1	                        func@0x180899b40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018176	885	0	182	0	0	0
+       488	       332	   9018652	    0	      1	                        func@0x180899b40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018176	885	0	182	0	0	0
+       489	       333	   9018112	    0	      1	                        func@0x180899ad0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018064	109	0	309	0	0	0
+       490	       333	   9018130	    0	      1	                        func@0x180899ad0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9018064	109	0	309	0	0	0
+       491	       334	   9017520	    0	      1	                        func@0x1808997a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9017248	803	0	311	0	0	0
+       492	       334	   9017736	    0	      1	                        func@0x1808997a0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9017248	803	0	311	0	0	0
+       493	       335	   8124224	    0	      1	                        func@0x1807bf69f	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8124063	1190	0	317	0	0	0
+       494	       493	   8124320	    1	      1	  [Loop@0x1807bf740 in func@0x1807bf69f]	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8124224	941	0	318	0	0	0
+       495	       335	   8124537	    0	      1	                        func@0x1807bf69f	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	8124063	1190	0	317	0	0	0
+       496	       344	   7576227	    0	      1	                        func@0x180739a40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7576128	338	0	328	0	0	0
+       497	       344	   7576306	    0	      1	                        func@0x180739a40	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	7576128	338	0	328	0	0	0
+       498	       345	    628240	    0	      1	                        func@0x1800995e0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	628192	149	0	330	0	0	0
+       499	       345	    628240	    0	      1	                        func@0x1800995e0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	628192	149	0	330	0	0	0
+       500	       350	   9766752	    0	      1	                        func@0x180950730	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9766704	117	0	332	0	0	0
+       501	       350	   9766781	    0	      1	                        func@0x180950730	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igc64.dll	9766704	117	0	332	0	0	0
+       502	        87	    536304	    0	      1	                        func@0x180082c90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	535696	1453	0	72	0	0	0
+       503	        87	    536366	    0	      1	                        func@0x180082c90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	535696	1453	0	72	0	0	0
+       504	        87	    536390	    0	      1	                        func@0x180082c90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	535696	1453	0	72	0	0	0
+       505	       100	    391957	    0	      1	                        func@0x18005fa90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	391824	926	0	84	0	0	0
+       506	       100	    392104	    0	      1	                        func@0x18005fa90	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	391824	926	0	84	0	0	0
+       507	       107	    541760	    0	      1	                        func@0x1800843f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	541680	449	0	95	0	0	0
+       508	       107	    541785	    0	      1	                        func@0x1800843f0	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	541680	449	0	95	0	0	0
+       509	       109	   1503888	    0	      1	                        func@0x18016f250	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1503824	291	0	98	0	0	0
+       510	       109	   1503944	    0	      1	                        func@0x18016f250	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1503824	291	0	98	0	0	0
+       511	       109	   1503982	    0	      1	                        func@0x18016f250	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1503824	291	0	98	0	0	0
+       512	       204	   1623376	    0	      1	                        func@0x18018c430	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1623088	1950	0	114	0	0	0
+       513	       204	   1623442	    0	      1	                        func@0x18018c430	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\igdrcl64.dll	1623088	1950	0	114	0	0	0
+       514	        41	    154384	    0	      1	                        func@0x180025870	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	153712	3836	0	132	0	0	0
+       515	        41	    154592	    0	      1	                        func@0x180025870	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\cpu_device64.dll	153712	3836	0	132	0	0	0
+       516	        36	    859472	    0	      1	                        func@0x1800d1c05	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	859141	1403	0	141	0	0	0
+       517	        36	    859531	    0	      1	                        func@0x1800d1c05	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\x64\intelocl64.dll	859141	1403	0	141	0	0	0
+       518	        80	    362848	    0	      1	                        func@0x180058863	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	362595	2762	0	10	0	0	0
+       519	        80	    363099	    0	      1	                        func@0x180058863	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	362595	2762	0	10	0	0	0
+       520	        80	    363283	    0	      1	                        func@0x180058863	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_9c1ab568b4fa57de\IntelOpenCL64.dll	362595	2762	0	10	0	0	0
+       521	       358	    269057	    0	      1	                        func@0x1800418e0	C:\WINDOWS\SYSTEM32\ntdll.dll	268512	4724	0	37	0	0	0
+       522	       358	    270671	    0	      1	                        func@0x1800418e0	C:\WINDOWS\SYSTEM32\ntdll.dll	268512	4724	0	37	0	0	0
+       523	        27	    828320	    0	      0	                        func@0x1800ca25d	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	827997	1570	0	88	0	0	0
+       524	        27	    828602	    0	      0	                        func@0x1800ca25d	C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin\intelocl64_emu.dll	827997	1570	0	88	0	0	0
+       525	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	1	0	334	0	0	0

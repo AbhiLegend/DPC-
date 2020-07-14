@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <connectionOption>localhost</connectionOption>
+ <rdmgr>
+  <timestamp type="u64_t">1593732499</timestamp>
+  <hostname>LAPTOP-HC6T02KA</hostname>
+  <os>windows</os>
+  <product>Intel® Advisor 2021.1 beta05</product>
+  <buildNumber type="s32_t">605330</buildNumber>
+  <logicalCPUCount type="s32_t">8</logicalCPUCount>
+  <physicalCoreCount type="s32_t">4</physicalCoreCount>
+  <processorPackageCount type="s32_t">1</processorPackageCount>
+  <CPUFrequency type="s64_t">1800000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">142</CPUModel>
+  <CPUStepping type="s32_t">11</CPUStepping>
+  <CPUBrandName>Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz</CPUBrandName>
+  <isa>avx2</isa>
+ </rdmgr>
+ <contextValues type="bag"/>
+ <All_Configurations-All_Platforms>
+  <target_settings>
+   <selected_workload>
+    <localhost>release</localhost>
+   </selected_workload>
+   <workloads>
+    <localhost>
+     <release type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>release</targetName>
+       <launch_app.app_to_launch>C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>C:\Users\abhis\source\repos\Vector_Add</launch_app.working_folder>
+       <launch_app.app_parameters></launch_app.app_parameters>
+       <launch_app.environment>OCL_ICD_FILENAMES=intelocl64_emu.dll;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\lib\x64\intelocl64.dll;&#13;
+AOCL_BOARD_PACKAGE_ROOT=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\board\intel_a10gx_pac&#13;
+INTELFPGAOCLSDKROOT=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga&#13;
+INTEL_TARGET_ARCH=intel64&#13;
+INTEL_TARGET_PLATFORM=windows&#13;
+CMPLR_ROOT=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\&#13;
+PATH=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\redist\intel64_win\compiler;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\host\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\board\intel_a10gx_pac\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\lib\oclgpu;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\bin\intel64;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\redist\intel64_win\compiler;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\lib;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\ioc\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\lib\ocloc;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\..\..\tbb\latest\redist\intel64\vc_mt;%PATH%</launch_app.environment>
+       <launch_app.environment_prepend>PATH=</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>C:\Users\abhis\source\repos\Vector_Add\My Advisor Results - vector-add\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\abhis\source\repos\Vector_Add\x64\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\abhis\source\repos\Vector_Add</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\source\repos\Vector_Add\x64\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\source\repos\Vector_Add</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(VC_ExecutablePath_x64)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\Python37\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Python37</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Intel\Intel(R) Management Engine Components\DAL</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Intel\WiFi\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Common Files\Intel\WirelessCommon</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\GtkSharp\2.12\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\130\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\nodejs</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\dotnet</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\CMake\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\chocolatey\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Wolfram Research\WolframScript</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\PuTTY</value>
+        </item>
+        <item>
+         <value>bin=C:\ffmpeg\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Java\jdk1.8.0_131\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python36\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python36</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python37-32\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python37-32</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Roaming\npm</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Microsoft VS Code\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\GitHubDesktop\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\heroku\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>auto_finalize</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>dataLimit</id>
+         <value type="s32_t">500</value>
+        </contextValue>
+        <contextValue>
+         <id>interval</id>
+         <value type="s32_t">10</value>
+        </contextValue>
+        <contextValue>
+         <id>keepCaches</id>
+         <value>clear</value>
+        </contextValue>
+        <contextValue>
+         <id>mklUserMode</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>modules_switch</id>
+         <value>knob.modules_switch.exclude</value>
+        </contextValue>
+        <contextValue>
+         <id>mrte_mode</id>
+         <value>auto</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>profilePython</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>profile_intel_perf_libs</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>spillAnalysis</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>stackStitching</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stackwalk</id>
+         <value>offline</value>
+        </contextValue>
+        <contextValue>
+         <id>static_instruction_mix</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>support_multi_isa_binaries</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>release</value>
+        </contextValue>
+        <contextValue>
+         <id>type_opt</id>
+         <value>cpu:stack</value>
+        </contextValue>
+       </context>
+      </workload>
+     </release>
+     <tripcounts type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+      <workload>
+       <targetName>tripcounts</targetName>
+       <launch_app.app_to_launch>C:\Users\abhis\source\repos\Vector_Add\x64\Debug\vector-add.exe</launch_app.app_to_launch>
+       <launch_app.working_folder>C:\Users\abhis\source\repos\Vector_Add</launch_app.working_folder>
+       <launch_app.app_parameters></launch_app.app_parameters>
+       <launch_app.environment>OCL_ICD_FILENAMES=intelocl64_emu.dll;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\lib\x64\intelocl64.dll;&#13;
+AOCL_BOARD_PACKAGE_ROOT=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\board\intel_a10gx_pac&#13;
+INTELFPGAOCLSDKROOT=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga&#13;
+INTEL_TARGET_ARCH=intel64&#13;
+INTEL_TARGET_PLATFORM=windows&#13;
+CMPLR_ROOT=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\&#13;
+PATH=C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\redist\intel64_win\compiler;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\host\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\lib\oclfpga\board\intel_a10gx_pac\windows64\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\lib\oclgpu;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\bin\intel64;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\redist\intel64_win\compiler;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\lib;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\ioc\bin;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\windows\lib\ocloc;C:\Program Files (x86)\inteloneapi\inteloneapi\compiler\2021.1-beta05\windows\..\..\..\tbb\latest\redist\intel64\vc_mt;%PATH%</launch_app.environment>
+       <launch_app.environment_prepend>PATH=</launch_app.environment_prepend>
+       <use_app_dir_as_work_dir type="bool">false</use_app_dir_as_work_dir>
+       <result_directory.path>C:\Users\abhis\source\repos\Vector_Add\My Advisor Results - vector-add\r@@@{at}</result_directory.path>
+       <search_directories>
+        <item>
+         <value>sym=C:\Users\abhis\source\repos\Vector_Add\x64\Debug</value>
+        </item>
+        <item>
+         <value>sym=C:\Users\abhis\source\repos\Vector_Add</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\source\repos\Vector_Add\x64\Debug</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\source\repos\Vector_Add</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(VC_ExecutablePath_x64)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(WindowsSDK_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(VS_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:/Users\abhis\source\repos\Vector_Add\$(MSBuild_ExecutablePath)</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Team Tools\Static Analysis Tools\FxCop</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\Oracle\Java\javapath</value>
+        </item>
+        <item>
+         <value>bin=C:\Python37\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Python37</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\system32</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\Wbem</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\WindowsPowerShell\v1.0</value>
+        </item>
+        <item>
+         <value>bin=C:\WINDOWS\System32\OpenSSH</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Intel\Intel(R) Management Engine Components\DAL</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Intel\WiFi\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Common Files\Intel\WirelessCommon</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\GtkSharp\2.12\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\dotnet</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\130\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\nodejs</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\dotnet</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\CMake\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\ProgramData\chocolatey\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Git\cmd</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files (x86)\Wolfram Research\WolframScript</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\PuTTY</value>
+        </item>
+        <item>
+         <value>bin=C:\ffmpeg\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Java\jdk1.8.0_131\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python36\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python36</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python37-32\Scripts</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Python\Python37-32</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Microsoft\WindowsApps</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Roaming\npm</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\Programs\Microsoft VS Code\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Users\abhis\AppData\Local\GitHubDesktop\bin</value>
+        </item>
+        <item>
+         <value>bin=C:\Program Files\heroku\bin</value>
+        </item>
+       </search_directories>
+       <context>
+        <contextValue>
+         <id>auto_finalize</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>benchmarks-sync</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>cache_config</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>cs_file</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>data_transfer_analysis</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>enable_cache_simulation</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>enable_grf_simulation</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>flops_and_masks</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>loops</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>mark-up-list</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>modules_switch</id>
+         <value>knob.modules_switch.exclude</value>
+        </contextValue>
+        <contextValue>
+         <id>page_size</id>
+         <value>4096</value>
+        </contextValue>
+        <contextValue>
+         <id>process_for_analysis</id>
+         <value></value>
+        </contextValue>
+        <contextValue>
+         <id>profilePython</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>profile_jit</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stackStitching</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>stacks</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>stl_profiling</id>
+         <value type="bool">true</value>
+        </contextValue>
+        <contextValue>
+         <id>targetType</id>
+         <value>tripcounts</value>
+        </contextValue>
+        <contextValue>
+         <id>track_heap_objects</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>track_stack_accesses</id>
+         <value type="bool">false</value>
+        </contextValue>
+        <contextValue>
+         <id>trip_counts</id>
+         <value type="bool">true</value>
+        </contextValue>
+       </context>
+      </workload>
+     </tripcounts>
+    </localhost>
+   </workloads>
+  </target_settings>
+ </All_Configurations-All_Platforms>
+</root>
