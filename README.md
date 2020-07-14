@@ -1,4 +1,4 @@
-# `vector-add` Sample
+# `vector-Multiplication` Sample
 
 | Optimized for                     | Description
 |:---                               |:---
@@ -17,7 +17,7 @@ The basic DPC++ implementation explained in the code includes device selector, b
 ## License  
 This code sample is licensed under MIT license. 
 
-## Building the `vector-add` Program for CPU and GPU 
+## Building the `vector-multiplication` Program for CPU and GPU 
 
 ### On a Linux* System
 Perform the following steps:
@@ -113,3 +113,4 @@ Perform the following steps:
 
 6. Select **Project** > **Build** menu option to build the selected configuration.
 7. Select **Debug** > **Start Without Debugging** menu option to run the program.
+**Don't go by the name Vector add its actually Vector Multiplication**
